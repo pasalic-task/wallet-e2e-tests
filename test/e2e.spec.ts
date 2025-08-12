@@ -35,7 +35,7 @@ describe("Wallet E2E Test", () => {
 
     const walletNames = await walletPage.getWalletNames();
     console.log("Received array:", walletNames);
-
+    //just checking are there 3 wallets. needed some more time to actualy cover the case.
     const walletCount = walletNames.filter(name => name.toLowerCase().includes("wallet")).length;
     expect(walletCount).toBeGreaterThanOrEqual(3);
   });
